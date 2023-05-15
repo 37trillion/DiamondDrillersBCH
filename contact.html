@@ -18,21 +18,19 @@
 		</nav>
 	</header>
 	<main>
-		<section class="contact">
-			<h2>Contact Us</h2>
-			<p>Need help or have questions about Diamond Drillers BCH? Contact us!</p>
-			<form>
-				<label for="name">Name:</label>
-				<input type="text" id="name" name="name" required>
+		<form action="submit_form.php" method="post">
+  <label for="name">Name:</label>
+  <input type="text" id="name" name="name" required>
 
-				<label for="email">Email:</label>
-				<input type="email" id="email" name="email" required>
+  <label for="email">Email:</label>
+  <input type="email" id="email" name="email" required>
 
-				<label for="message">Message:</label>
-				<textarea id="message" name="message" required></textarea>
+  <label for="question">Question:</label>
+  <textarea id="question" name="question" required></textarea>
 
-				<button type="submit">Submit</button>
-			</form>
+  <input type="submit" value="Submit">
+</form>
+
 			<p>You can also reach us by phone or email:</p>
 			<ul>
 				<li>Phone: 1 672 999 3127</li>

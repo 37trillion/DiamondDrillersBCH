@@ -1,45 +1,42 @@
-/* CSS code for Diamond Drillers BCH website */
-
-/* Set background to black with yellow text */
 body {
-  background-color: black;
-  color: yellow;
-  font-family: Arial, sans-serif;
+    border: 20px solid #ffa500; /* 20px outline border with orange color */
 }
 
-/* Set Diamond Drillers BCH title */
-header {
-  text-align: center;
-  font-size: 36px;
-  font-weight: bold;
-  color: white;
-  border-bottom: 5px solid yellow;
-  border-left: 5px solid yellow;
-  border-right: 5px solid yellow;
+/* Define brand colors */
+:root {
+    --white: #ffffff;
+    --black: #000000;
+    --lime: #32cd32;
 }
 
-/* Set lime green header titles */
-h1, h2, h3, h4, h5, h6 {
-  color: #00FF00;
+/* Default text size and color for classes and IDs */
+body {
+    font-size: 16px;
+    color: var(--black);
 }
 
-/* Set bold text */
-h1, h2, h3, h4, h5, h6 {
-  font-weight: bold;
+h1 {
+    font-size: 24px;
+    color: var(--lime);
 }
 
-/* Set link styles */
-a {
-  color: #ADD8E6;
-  text-decoration: none;
-  float: right;
+h2 {
+    font-size: 20px;
+    color: var(--lime);
 }
 
-a:hover {
-  text-decoration: underline;
-}
-
-/* Set left-aligned text */
 p {
-  text-align: left;
+    font-size: 14px;
+    color: var(--black);
+}
+
+a {
+    color: var(--lime);
+    text-decoration: none;
+}
+
+/* Add hover effect to links */
+a:hover {
+    color: #ffffff;
+    background-color: var(--lime);
 }

@@ -9,25 +9,59 @@
   </head>
   <body>
     <header>
-      <h1>Diamond Drillers BCH</h1>
+      <pre>
+BBBBBBBBBBBBBBBBB   CCCCCCCCCCCCCCHHHHHHHHH     HHHHHHHHH       HHHHHHHHHCCCCCCCCCCCCKKKKKKKKK    KKKKKKK
+B::::::::::::::::B CC:::::::::::::::CH:::::::H     H:::::::H       H:::::::HC::::::::::::CK:::::::K    K:::::K
+B::::::BBBBBB:::::BCC:::::::::::::::CH:::::::H     H:::::::H       H:::::::HC:::::::::::CK:::::::K    K:::::K
+BB:::::B     B:::::BC:::::CCCCCCCC::::CHH::::::H     H::::::HH     H::::::HHC:::::::::::CK:::::::K   K::::::K
+  B::::B     B:::::BC:::::C       CCCCCC  H:::::H     H:::::H       H:::::H C:::::::::::CKK::::::K  K:::::KKK
+  B::::B     B:::::BC:::::C                H:::::H     H:::::H       H:::::H C:::::::::::C   K:::::K K:::::K   
+  B::::BBBBBB:::::B C:::::C                H::::::HHHHH::::::H       H::::::HC:::::::C::::C    K::::::K:::::K    
+  B:::::::::::::BB  C:::::C                H:::::::::::::::::H       H:::::::::HC:::::::C::::C    K:::::::::::K     
+  B::::BBBBBB:::::B C:::::C                H:::::::::::::::::H       H:::::::::HC:::::::C::::C    K:::::::::::K    
+  B::::B     B:::::BC:::::C                H::::::HHHHH::::::H       H::::::H C:::::::C::::C    K::::::K:::::K   
+  B::::B     B:::::BC:::::C       CCCCCC  H:::::H     H:::::H       H:::::H C:::::::C::::C   K:::::::K K:::::K   
+  B::::B     B:::::BC:::::CCCCCCCC::::CHH::::::H     H::::::HH     H::::::HHC:::::::::::CKK:::::::K  K:::::KKK
+BB:::::BBBBBB::::::B CC:::::::::::::::CH:::::::H     H:::::::H       H:::::::HC::::::::::::CK:::::::K   K::::::K
+B:::::::::::::::::B   C:::::::::::::::CH:::::::H     H:::::::H       H:::::::HC::::::::::::K:::::::K    K:::::K
+BBBBBBBBBBBBBBBBBB     CCCCCCCCCCCCCCCHHHHHHHHH     HHHHHHHHH       HHHHHHHHHCCCCCCCCCCCCKKKKKKKKK    KKKKKKK
+      </pre>
       <nav>
         <ul>
           <li><a href="index.html">Home</a></li>
           <li><a href="mining.html">Mining Instructions</a></li>
           <li><a href="summary.html">Summary and Links</a></li>
-          <li><a href="contact.html">Contact Us</a></li>
-        </ul>
+                </ul>
       </nav>
     </header>
     <main>
-      <section id="summary">
-        <h2>What is Diamond Drillers BCH?</h2>
-        <p>Diamond Drillers BCH is an experimental project to create a mining pool for Bitcoin Cash. Our goal is to provide a reliable and profitable mining experience for our users while also contributing to the security and decentralization of the Bitcoin Cash network.</p>
-        <p>To get started with mining, follow the instructions on our <a href="mining.html">Mining Instructions</a> page. For more information about Bitcoin Cash and other resources, visit our <a href="summary.html">Summary and Links</a> page.</p>
+      <section>
+        <h1>Welcome to Diamond Drillers BCH</h1>
+        <p>Diamond Drillers BCH is an experimental Bitcoin Cash mining project that allows users to connect to the stratum+tcp://192.168.0.58:8333 mining pool. Please note that payments will most likely be paid out when a block is found by the pool.</p>
+        <p>To get started with Diamond Drillers BCH, please follow the instructions on the <a href="mining.html">Mining Instructions</a> page.</p>
+      </section>
+      <section>
+        <h2>About Bitcoin Cash</h2>
+        <p>Bitcoin Cash (BCH) is a cryptocurrency that was created in 2017 as a fork of Bitcoin. It was created to address the scalability issues of Bitcoin and to increase the block size limit, which allows for faster and cheaper transactions. Bitcoin Cash has a growing community of supporters who believe that it has the potential to become a widely used digital currency.</p>
+        <p>For more information about Bitcoin Cash, please visit the <a href="https://www.reddit.com/r/btc/">BCH subreddit</a> or the <a href="https://bitcoincash.org/">Bitcoin Cash website</a>.</p>
+      </section>
+      <section>
+        <h2>Contact Us</h2>
+        <p>If you have any questions or suggestions about Diamond Drillers BCH, please don't hesitate to contact us using the form below or by sending an email to ericmccormack92@gmail.com or calling 1 672 999 3127.</p>
+        <form action="submit_suggestion.php" method="post">
+          <label for="name">Name:</label>
+          <input type="text" id="name" name="name" required>
+          <label for="email">Email:</label>
+          <input type="email" id="email" name="email" required>
+          <label for="suggestion">Suggestion:</label>
+          <textarea id="suggestion" name="suggestion" required></textarea>
+          <button type="submit">Submit</button>
+        </form>
       </section>
     </main>
     <footer>
       <p>&copy; 2023 Diamond Drillers BCH. All rights reserved.</p>
+      <p>Powered by <a href="https://www.bitcoinabc.org/">Bitcoin ABC</a>.</p>
     </footer>
   </body>
 </html>

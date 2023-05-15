@@ -1,46 +1,41 @@
 <!DOCTYPE html>
-<html>
-<head>
-	<title>Mining | Diamond Drillers BCH</title>
-	<link rel="stylesheet" type="text/css" href="style.css">
-	<script src="script.js"></script>
-</head>
-<body>
-	<header>
-		<h1>Diamond Drillers BCH</h1>
-		<nav>
-			<ul>
-				<li><a href="index.html">Home</a></li>
-				<li><a href="mining.html">Mining</a></li>
-				<li><a href="summary.html">Summary</a></li>
-				<li><a href="contact.html">Contact</a></li>
-			</ul>
-		</nav>
-	</header>
-	<main>
-		<section class="mining">
-			<h2>Start Mining Bitcoin Cash</h2>
-			<p>Follow these steps to connect to our stratum:</p>
-			<ol>
-				<li>Download and install a Bitcoin Cash mining software such as CGMiner, BFGMiner or Easyminer.</li>
-				<li>Open the software and configure your mining device to connect to the stratum: stratum+tcp://192.168.0.58:8333</li>
-				<li>Enter your Diamond Drillers BCH username and password.</li>
-				<li>Start mining!</li>
-			</ol>
-			<p>If you need help with mining, please contact our customer support team.</p>
-		</section>
-		<section class="links">
-			<h2>Useful Links</h2>
-			<ul>
-				<li><a href="https://www.bitcoincash.org/">Bitcoin Cash Official Website</a></li>
-				<li><a href="https://www.bitcoincash.org/mining.html">Bitcoin Cash Mining Information</a></li>
-				<li><a href="https://pool.btc.com/">BTC Pool</a></li>
-				<li><a href="https://pool.btc.com/stats">Mining Pool Stats</a></li>
-			</ul>
-		</section>
-	</main>
-	<footer>
-		<p>&copy; 2023 Diamond Drillers BCH</p>
-	</footer>
-</body>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8">
+    <title>Diamond Drillers BCH - Mining Instructions</title>
+    <link rel="stylesheet" href="style.css">
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.0/jquery.min.js"></script>
+    <script src="price.js"></script>
+  </head>
+  <body>
+    <header>
+      <nav>
+        <ul>
+          <li><a href="index.html">Home</a></li>
+          <li><a href="mining.html">Mining Instructions</a></li>
+          <li><a href="summary.html">Bitcoin Cash Summary</a></li>
+          <li><a href="contact.html">Contact Us</a></li>
+        </ul>
+      </nav>
+    </header>
+    <main>
+      <section>
+        <h1>Mining Instructions</h1>
+        <p>To start mining with Diamond Drillers BCH, you need to follow the steps below:</p>
+        <ol>
+          <li>Download and install a Bitcoin Cash full node on your device. You can download the official Bitcoin ABC client from the <a href="https://www.bitcoinabc.org/">Bitcoin ABC website</a>.</li>
+          <li>Once you have installed the Bitcoin ABC client, open the configuration file and add the following line:</p>
+            <pre><code>stratum=+tcp://diamonddrillersBCH:8333</code></pre>
+            <p>This will display the stratum as "diamonddrillersBCH" while still connecting to the original stratum at "192.168.0.58:8333".</p>
+          <li>Save the configuration file and restart the Bitcoin ABC client.</li>
+          <li>Connect your mining software to the stratum "diamonddrillersBCH:8333". You can use any mining software that supports the SHA-256 algorithm, such as <a href="https://www.cgminer.org/">CGMiner</a> or <a href="https://bfgminer.org/">BFGMiner</a>.</li>
+          <li>Start mining! Your mining software will automatically connect to the Diamond Drillers BCH mining pool and start mining Bitcoin Cash.</li>
+        </ol>
+      </section>
+    </main>
+    <footer>
+      <p>&copy; 2023 Diamond Drillers BCH. All rights reserved.</p>
+      <p>Powered by <a href="https://www.bitcoinabc.org/">Bitcoin ABC</a>.</p>
+    </footer>
+  </body>
 </html>

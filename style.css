@@ -1,10 +1,21 @@
 /* CSS code for Diamond Drillers BCH website */
 
-/* Set black background */
+/* Set background to black with yellow text */
 body {
   background-color: black;
-  color: orange;
+  color: yellow;
   font-family: Arial, sans-serif;
+}
+
+/* Set Diamond Drillers BCH title */
+header {
+  text-align: center;
+  font-size: 36px;
+  font-weight: bold;
+  color: white;
+  border-bottom: 5px solid yellow;
+  border-left: 5px solid yellow;
+  border-right: 5px solid yellow;
 }
 
 /* Set lime green header titles */
@@ -21,8 +32,14 @@ h1, h2, h3, h4, h5, h6 {
 a {
   color: #ADD8E6;
   text-decoration: none;
+  float: right;
 }
 
 a:hover {
   text-decoration: underline;
+}
+
+/* Set left-aligned text */
+p {
+  text-align: left;
 }
